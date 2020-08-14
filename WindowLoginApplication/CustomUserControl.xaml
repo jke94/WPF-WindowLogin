@@ -1,0 +1,66 @@
+﻿<UserControl x:Class="WindowLoginApplication.CustomUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d">
+    
+    <UserControl.Resources>
+        <ResourceDictionary Source="CustomStyles.xaml"></ResourceDictionary>
+    </UserControl.Resources>
+    
+    <Grid DataContext="{StaticResource MyViewModel}">
+
+        <StackPanel Style="{StaticResource StackPanelStyle-1}">
+
+
+            <StackPanel Style="{StaticResource StackPanelStyle-0}">
+
+                <Label Style="{StaticResource LabelStyle-0}"
+                       Content="User">
+                    
+                </Label>
+
+                <TextBox    x:Name="UserTextBox"
+                            Style="{StaticResource TextBoxStyle-0}">
+                    
+                </TextBox>
+                                
+            </StackPanel>
+
+            <StackPanel Style="{StaticResource StackPanelStyle-0}">
+
+                <Label Style="{StaticResource LabelStyle-0}"
+                       Content="Password">
+
+                </Label>
+
+                <PasswordBox x:Name="UserPassword"
+                             Style="{StaticResource PasswordBoxStyle-0}">
+
+                </PasswordBox>
+
+            </StackPanel>
+
+            <StackPanel Style="{StaticResource StackPanelStyle-0}">
+
+                <Button Style="{StaticResource ButtonStyle-0}"
+                        Content="Login"
+                        Command="{Binding SaveAccountCommand}">
+
+                    <Button.CommandParameter>
+                        <MultiBinding Converter="{StaticResource MyConverter}">
+                            <Binding ElementName="UserTextBox"/>
+                            <Binding ElementName="UserPassword"/>
+                        </MultiBinding>
+                    </Button.CommandParameter>
+
+                </Button>
+
+            </StackPanel>
+            
+        </StackPanel>
+
+    </Grid>
+    
+</UserControl>
