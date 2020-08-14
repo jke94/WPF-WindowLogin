@@ -5,6 +5,10 @@ An implementation example of window login with user and password with Windows Pr
 
 ## Application images
 
-![alt text](https://github.com/jke94/WPF-WindowLogin/blob/dev/LoginImage.PNG)
+1.Image with user and password entered.
 
-![alt text](https://github.com/jke94/WPF-WindowLogin/blob/dev/LoginImageDemostration.PNG)
+![Image1](https://github.com/jke94/WPF-WindowLogin/blob/dev/LoginImage.PNG)
+
+2.Image after click login button and display pop-up with the info entered.
+
+![Image2](https://github.com/jke94/WPF-WindowLogin/blob/dev/LoginImageDemostration.PNG)
