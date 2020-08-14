@@ -1,0 +1,40 @@
+﻿<Application x:Class="WindowLoginApplication.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="clr-namespace:WindowLoginApplication"
+             xmlns:converter="clr-namespace:WindowLoginApplication"
+             StartupUri="MainWindow.xaml">
+
+    <Application.Resources>
+
+        <!--#region ViewModels-->
+
+        <vm:ViewModel x:Key="MyViewModel"></vm:ViewModel>
+
+        <!--#endregion-->
+
+
+        <!--#region Converters-->
+        
+        <converter:Converter x:Key="MyConverter"/>
+
+        <!--#endregion-->
+
+
+        <!--#region Styles-->
+
+        <ResourceDictionary x:Key="MyResorceDictionary">
+
+            <ResourceDictionary.MergedDictionaries>
+
+                <ResourceDictionary Source="CustomStyle.xaml"/>
+
+            </ResourceDictionary.MergedDictionaries>
+
+        </ResourceDictionary>
+
+        <!--#endregion-->
+
+    </Application.Resources>
+
+</Application>

@@ -1,0 +1,65 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+
+    <Style x:Key="StackPanelStyle-0"                TargetType="StackPanel">
+
+        <Setter Property="Margin"                   Value="5"/>
+        <Setter Property="HorizontalAlignment"      Value="Center"/>
+        <Setter Property="VerticalAlignment"        Value="Center"/>
+        <Setter Property="Orientation"              Value="Horizontal"/>
+        <Setter Property="Background"               Value="LightGoldenrodYellow"/>
+
+    </Style>
+
+    <Style x:Key="StackPanelStyle-1"                TargetType="StackPanel">
+
+        <Setter Property="Margin"                   Value="5"/>
+        <Setter Property="HorizontalAlignment"      Value="Center"/>
+        <Setter Property="VerticalAlignment"        Value="Center"/>
+        <Setter Property="Orientation"              Value="Vertical"/>
+        <Setter Property="Background"               Value="Cyan"/>
+
+    </Style>
+
+    <Style x:Key="LabelStyle-0"                     TargetType="Label">
+
+        <Setter Property="HorizontalAlignment"      Value="Center"/>
+        <Setter Property="VerticalAlignment"        Value="Center"/>
+        <Setter Property="Width"                    Value="75"/>
+        <Setter Property="Height"                   Value="Auto"/>
+
+    </Style>
+
+    <Style x:Key="TextBoxStyle-0"                   TargetType="TextBox">
+
+        <Setter Property="HorizontalAlignment"      Value="Center"/>
+        <Setter Property="VerticalAlignment"        Value="Center"/>
+        <Setter Property="Width"                    Value="75"/>
+
+    </Style>
+
+    <Style x:Key="PasswordBoxStyle-0"               TargetType="PasswordBox">
+
+        <Setter Property="HorizontalAlignment"      Value="Center"/>
+        <Setter Property="VerticalAlignment"        Value="Center"/>
+        <Setter Property="Width"                    Value="75"/>
+
+    </Style>
+
+    <Style x:Key="ButtonStyle-0"                    TargetType="Button">
+
+        <Setter Property="HorizontalAlignment"      Value="Stretch"/>
+        <Setter Property="VerticalAlignment"        Value="Stretch"/>
+        <Setter Property="Width"                    Value="150"/>
+        <Setter Property="Height"                    Value="Auto"/>
+
+    </Style>
+
+    <Style x:Key="GridStyle-0"                      TargetType="Grid">
+
+        <Setter Property="Background"               Value="BlanchedAlmond"></Setter>
+        
+    </Style>
+    
+</ResourceDictionary>
